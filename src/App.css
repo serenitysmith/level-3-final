@@ -46,10 +46,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-} 
+  position: relative;
+  margin: 20px; /* Adjust the margin to create more space between list items */
+}
 
 .meme-item img {
-  max-width: 50%;}
+  max-width: 100%;}
 
   .meme-item button {
     padding: 5px 10px;
@@ -84,7 +86,7 @@ main {
   font-size: 40px;
 } 
 
-.text-top {
+/* .text-top {
   position: absolute;
   top: 200px;
   left: 0%;
@@ -100,15 +102,40 @@ left: 70%;
   transform: translateX(-50%);
   font-size: 2em;
   color: rgb(153, 6, 6);
-} 
+}  */
 
 
-/* Smaller font size for meme list */
-.text-list {
+.textlist-top {
   position: absolute;
-  top: 200px;
-  left: 70%;
+  top: 10px; /* Adjust the vertical position as needed for the list display */
+  left: 50%;
   transform: translateX(-50%);
-  font-size: 1em; /* Adjust the font size as needed for the list */
+  font-size: 1em; /* Adjust the font size for the list display */
   color: white; /* You can adjust the color as needed */
+}
+
+.textlist-bottom {
+  position: absolute;
+  bottom: 50px; /* Adjust the vertical position as needed for the list display */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1em; /* Adjust the font size for the list display */
+  color: white; /* You can adjust the color as needed */
+}
+.text-top {
+  position: absolute;
+  top: 90px; /* Adjust the vertical position as needed for the main display */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2em;
+  color: white;
+}
+
+.text-bottom {
+  position: absolute;
+  bottom: 10px; /* Adjust the vertical position as needed for the main display */
+  left: 40%;
+  transform: translateX(-50%);
+  font-size: 2em;
+  color: white;
 }
