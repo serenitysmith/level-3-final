@@ -1,41 +1,22 @@
-
-
-
-
-
 /* Main container */
 main {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  grid-template-rows: 60%;
+  gap: 10px; /* Adjust the gap between elements */
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
 }
 
-/* Input fields */
-.Shutup {
-  position: relative;
+/* Input fields  */
+.Shutup, .take-my {
   height: 30px;
   width: 200px;
+  justify-content: space-between;
   background-color: aliceblue;
   border-radius: 20%;
-  margin-right: 90px; /* Adjust the margin-right to create even separation */
-  margin-bottom: 50px;
-}
-
-.take-my {
-  position: relative;
-  height: 30px;
-  width: 200px;
-  background-color: aliceblue;
-  border-radius: 20%;
-  margin-right: -300px; /* Adjust the margin-right to create even separation */
-  margin-bottom: 50px;
-}
-
-
-.take-my {
-  margin-left: 200px;
+  padding: 2%;
 }
 
 /* Buttons */
@@ -49,21 +30,12 @@ main {
   font-size: 16px;
   font-weight: bolder;
   font-family: fantasy;
-  margin-top: 11%;
-  position: absolute;
-}
+} 
 
-/* Meme display */
-.meme {
-  margin: 20px 0;
-}
 
-.meme-generated {
-  max-width: 100%;
-}
 
 /* Meme list */
-.meme-list {
+ .meme-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -74,21 +46,20 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} 
 
 .meme-item img {
-  max-width: 100%;
-}
+  max-width: 50%;}
 
-.meme-item button {
-  padding: 5px 10px;
-  background-color: #dc3545;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-}
+  .meme-item button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
 
 .troll {
   position: absolute;
@@ -111,55 +82,33 @@ main {
   display: flex;
   margin-left: 20%;
   font-size: 40px;
-}
+} 
 
 .text-top {
   position: absolute;
-  width: 70%;
-  text-align: center;
-  left: 44%;
-  transform: translateX(-8%);
-  margin: -680px 0;
-  padding: 0 5px;
-  font-family: impact, sans-serif;
+  top: 200px;
+  left: 0%;
+  transform: translateX(-50%);
   font-size: 2em;
-  text-transform: uppercase;
   color: white;
-  letter-spacing: 1px;
-  text-shadow:
-      2px 2px 0 #000,
-      -2px -2px 0 #000,
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-      0 2px 0 #000,
-      2px 0 0 #000,
-      0 -2px 0 #000,
-      -2px 0 0 #000,
-      2px 2px 5px #000;
-     
 }
+
 .text-bottom {
   position: absolute;
-  width: 70%;
-  text-align: center;
-  left: 44%;
-  transform: translateX(-8%);
-  margin: -80px 50px;
-  padding: 0 5px;
-  font-family: impact, sans-serif;
+  bottom: 90px;
+left: 70%;
+  transform: translateX(-50%);
   font-size: 2em;
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 1px;
-  text-shadow:
-      2px 2px 0 #000,
-      -2px -2px 0 #000,
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-      0 2px 0 #000,
-      2px 0 0 #000,
-      0 -2px 0 #000,
-      -2px 0 0 #000,
-      2px 2px 5px #000;
-      margin-bottom: 100px;
+  color: rgb(153, 6, 6);
+} 
+
+
+/* Smaller font size for meme list */
+.text-list {
+  position: absolute;
+  top: 200px;
+  left: 70%;
+  transform: translateX(-50%);
+  font-size: 1em; /* Adjust the font size as needed for the list */
+  color: white; /* You can adjust the color as needed */
 }

@@ -1,16 +1,15 @@
-
+import React from 'react';
 import './App.css';
 import Header from './components/Header'
-import Meme from './components/Meme'
-
+import MemeGenerator from './components/MemeGenerator'
 
 function App() {
   return (
     <div>
-        <Header />
-        <Meme />
+      <Header />
+      <MemeGenerator />
     </div>
-)
+  );
 }
 
 export default App;
