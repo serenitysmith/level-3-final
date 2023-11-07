@@ -5,9 +5,9 @@ export default function MemeList({ memesList, editMeme, deleteMeme, inList }) {
     <div className="meme-list">
       {memesList.map((meme, index) => (
         <div key={index} className="meme-item">
-          <img src={meme.randomImage} alt="Meme" />
-          <h2 className="textlist-bottom" inlist={true}>{meme.topText}</h2>
-          <h2  className="textlist-top" inlist={true}    >{meme.bottomText}</h2>
+          <img src={meme.randomImage} alt="Meme" className="listPhoto" />
+          <h2 className="textlist-top" inlist={true}>{meme.topText}</h2>
+          <h2  className="textlist-bottom" inlist={true}    >{meme.bottomText}</h2>
           <button onClick={() => editMeme(index)}>Edit</button>
           <button onClick={() => deleteMeme(index)}>Delete</button>
         </div>
