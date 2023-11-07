@@ -14,6 +14,9 @@ main {
   background-color: rgb(191, 214, 234);
   border-radius: 40%;
   padding: 2%;
+  font-family: fantasy;
+  color: purple;
+  
 }
 
 /* Buttons */
@@ -32,7 +35,7 @@ main {
 .get-new{
   top: 230px;
   position: absolute;
-  left: 422px;
+  left: 412px;
 }
 
 
@@ -123,8 +126,10 @@ left: 90px;
   font-size: 2em; 
   color: white; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-
-  background-color: rgb(12, 177, 177);
+font-weight: bolder;
+background-color: rgb(93, 145, 184);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-style: oblique;
 }
 
 .text-bottom {
@@ -135,10 +140,10 @@ left: 90px;
   font-size: 2em; 
   color: white; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-  font-family: fantasy;
-  background-color: rgb(12, 177, 177);
-  
-  
+  background-color: rgb(93, 145, 184);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-style: oblique;
+  font-weight: bolder;
 }
 
 
