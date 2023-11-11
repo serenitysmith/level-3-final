@@ -58,8 +58,8 @@ main {
 }
 
 .meme-item img {
-  max-width: 50%;
-max-height: 60%;}
+  max-width: 100px;
+max-height: 100px}
 
   .meme-item button {
     padding: 5px 10px;
@@ -154,6 +154,8 @@ font-style: oblique;
  max-width: 500px;
  max-height: 500px;
  margin-top: 100px;
+
+ 
  
 }
 
